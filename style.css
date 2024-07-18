@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:sans-serif;
 }
 
 body{
@@ -17,5 +18,9 @@ body{
 #box2{
     height: 300px;
     width: 300px;
-    background-color:brown;
+    background-color:tomato;
+}
+
+h1{
+    color: white;
 }
