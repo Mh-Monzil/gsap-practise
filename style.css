@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: gilroy;
+    font-family: sans-serif;
 }
 
 html,body{
@@ -32,6 +32,8 @@ html,body{
     width: 100%;
     background-color: lightsalmon;
     display: flex;
+    flex-direction: column;
+    gap: 50px;
     align-items: center;
     justify-content: center;
 }
@@ -40,4 +42,17 @@ html,body{
     height: 300px;
     width: 300px;
     background-color: crimson;
+}
+
+h1{
+    font-size: 60px;
+    position: relative;
+    background: red;
+    padding: 10px;
+}
+h2{
+    font-size: 60px;
+    position: relative;
+    background: white;
+    padding: 10px;
 }
