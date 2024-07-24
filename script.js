@@ -1,24 +1,19 @@
-gsap.from("h1", {
-    y:20 ,
-    delay:1,
-    opacity: 0,
+gsap.from("#page1 #box", {
+    scale:0,
+    delay:0.3,
+    duration: 2,
+    rotate: 360,
 })
 
-gsap.to("h1", {
-    color: "crimson"
+gsap.from("#page2 #box", {
+    scale:0,
+    delay:0.3,
+    duration: 2,
+    rotate: 360,
+    scrollTrigger: {
+        trigger: "#page2 #box",
+        scroller: "body",
+        markers: true,
+        start: "top 80%"
+    }
 })
-
-
-// gsap.to("#box1", {
-//     x: 600,
-//     duration: 2,
-//     delay: 1,
-//     borderRadius: 50,
-// })
-
-// gsap.from("#box2", {
-//     x: 600,
-//     duration: 2,
-//     delay: 1,
-//     borderRadius: 50,
-// })

@@ -2,25 +2,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:sans-serif;
+    font-family: gilroy;
 }
 
-body{
-    background: #111;
+html,body{
+    height: 100%;
+    width: 100%;
 }
 
-#box1{
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: lightsalmon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box{
     height: 300px;
     width: 300px;
     background-color: crimson;
-}
-
-#box2{
-    height: 300px;
-    width: 300px;
-    background-color:tomato;
-}
-
-h1{
-    color: white;
 }
