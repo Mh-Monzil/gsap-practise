@@ -1,39 +1,23 @@
-// gsap.from("#page3 h1", {
-//     opacity:0,
-//     duration: 2,
-//     x:300,
-//     scrollTrigger: {
-//         trigger: "#page3 h1",
-//         scroller: "body",
-//         markers: true,
-//         start: "top 50%",
-//     }
-// })
+var path = `M 10 100 Q 500 100 990 100`;
 
+var finalPath = `M 10 100 Q 500 100 990 100`;
 
-// gsap.from("#page3 h2", {
-//     opacity:0,
-//     duration: 2,
-//     x:-300,
-//     scrollTrigger: {
-//         trigger: "#page3 h2",
-//         scroller: "body",
-//         markers: true,
-//         start: "top 50%",
-//     }
-// })
+var string = document.querySelector("#string")
 
-gsap.from("#page2 #box", {
-    scale: 0,
-    opacity: 0,
-    duration: 1.5,
-    rotate: 720,
-    scrollTrigger: {
-        trigger: "#page2 #box",
-        scroller: "body",
-        markers: true,
-        start: "top 60%",
-        end: "top 30%",
-        scrub: 2,
-    }
+string.addEventListener("mousemove", (dets) => {
+    var path = `M 10 100 Q ${dets.x} ${dets.y} 990 100`
+
+    gsap.to("svg path", {
+        attr: {d: path},
+        duration: 0.3,
+        ease: "power3.out"
+    })
+})
+
+string.addEventListener("mouseleave", () => {
+    gsap.to("svg path", {
+        attr: {d: finalPath},
+        duration: 0.8,
+        ease: "elastic.out(1, 0.2)"
+    })
 })
